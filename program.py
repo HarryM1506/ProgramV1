@@ -1,25 +1,32 @@
 ﻿seB=int
 seC=int
 
+############################################################################
+
 print('Welcome to the AS Maths Algebra Revision tool.')
 print(' ')
 print('Would you like to revise C1 or C2?')
 print(' ')
 
 ############################################################################
-choice=int(input('Enter 1 for C1 or 2 for C2    '))
 
-if choice == 1:
-    print(' ')
-    print('C1 Selected')
+while True:
+    choice=int(input('Enter 1 for C1 or 2 for C2    '))
     
-elif choice == 2:
-    print(' ')
-    print('C2 Selected')
+    if choice == 1:
+        print(' ')
+        print('C1 Selected')
+        break
     
-else:
-    print(' ')
-    print('Restart')
+    elif choice == 2:
+        print(' ')
+        print('C2 Selected')
+        break
+
+    else:
+        print(' ')
+        print(' Not an option')
+        print(' ')
     
 ##############################################################################
 
@@ -69,6 +76,7 @@ if seA == 1:
     q1=str(raw_input('Q1 ----- Simplify    4x - 5y +3x + 6y ------  '    ))
     if q1 == '7x + y':
       print('Correct')
+      print(' ')
     else:
       print('Incorrect')
       print(' ')
@@ -76,6 +84,7 @@ if seA == 1:
     q2=str(raw_input('Q2 ----- Simplify   3r + 7t - 5r + 3t ------  '   ))
     if q2 == '−2r + 10t':
       print('Correct')
+      print(' ')
     else:
       print('Incorrect')
       print(' ')
@@ -83,6 +92,7 @@ if seA == 1:
     q3=str(raw_input('Q3 ----- Simplify   7( 1 - x^2) + 3( 2 - 3x + 5x^2) ------  '))
     if q3 == '8x^2 − 9x + 13':
       print('Correct')
+      print(' ')
     else:
       print('Incorrect')
       print(' ')
@@ -90,6 +100,7 @@ if seA == 1:
     q4=str(raw_input('Q4 ----- Simplify   4( c + 3d^2) - 3( 2c + d^2) ------  '))
     if q4 == '−2c + 9d^2':
       print('Correct')
+      print(' ')
     else:
       print('Incorrect')
       print(' ')
@@ -97,6 +108,7 @@ if seA == 1:
     q5=str(raw_input('Q5 ----- Simplify  ( r^2 + 3t^2 + 9 ) - ( 2r^2 + 3t^2 - 4 ) ------  '))
     if q5 == '13 - r^2':
       print('Correct')
+      print(' ')
     else:
       print('Incorrect')
       print(' ')
@@ -108,7 +120,7 @@ cont=int(input('Enter 1 to continue  '))
 ##########################################   Exercise 1B Choice   ##########################################
     
 
-if seA == 0 or cont == 1:
+if seA == 0 or cont == 1 or 0:
     print(' ')
     seB=int(input('C1 Algebra Simplifying Expressions - 1B ?  1 for Yes  ---  0 for No    '))
 
@@ -129,7 +141,7 @@ if seB == 1:
     print('  x^2 X x^5  ==>   x^7    ( X == Add Powers ) ')
     print(' ')
     print(' ')
-    print(' 6x^-3 / 3x^-5    ⇒    6/3 X x^-3 / x^-5   ⇒    2x^2    ( -3--5 = +)'  )
+    print(' 6x^-3 / 3x^-5    ==>    6/3 X x^-3 / x^-5   ==>    2x^2    ( -3--5 = +)'  )
     print(' ')
     print(' ')
     print(' (a^3)^2 X 2a^2    ==>  a^6 X 2a^2   ==>   2 X a^8   ==>  2a^8 ')
@@ -142,6 +154,7 @@ if seB == 1:
     b1=str(raw_input('Q1 ----- Simplify  2x^3 X 3x^2 ------     '))
     if b1 == '6x^5':
         print('Correct')
+        print(' ')
     else:
         print('Incorrect')
         print(' ')
@@ -149,6 +162,7 @@ if seB == 1:
     b2=str(raw_input('Q2 ----- Simplify   k^3 / k^-2 ------     '))
     if b2 == 'k^5':
         print('Correct')
+        print(' ')
     else:
         print('Incorrect')
         print(' ')
@@ -156,6 +170,7 @@ if seB == 1:
     b3=str(raw_input('Q3 ----- Simplify   (2a^3)^2 / 2a^3 ------    '))
     if b3 == '6a^-9':
         print('Correct')
+        print(' ')
     else:
         print('Incorrect')
         print(' ')
@@ -163,6 +178,7 @@ if seB == 1:
     b4=str(raw_input('Q4 ----- Simplify   7a^4 X (3a^4)^2 ------    '))
     if b4 == '63a^12':
         print('Correct')
+        print(' ')
     else:
         print('Incorrect')
         print(' ')
@@ -170,6 +186,7 @@ if seB == 1:
     b5=str(raw_input('Q5 ----- Simplify  2a^3 / 3a^2 X 6a^5 ------    '))
     if b5 == '4a^6':
         print('Correct')
+        print(' ')
     else:
         print('Incorrect')
         print(' ')
@@ -179,7 +196,7 @@ cont=input('Enter 1 to continue  ')
            
 ##########################################   Exercise 1C Choice   ##########################################
 
-if seB == 0 or cont == 1:
+if seB == 0 or cont == 1 or 0:
     print(' ')
     seC=int(input('C1 Algebra Expanding & Simplifying Expressions - 1C ?  1 for Yes  ---  0 for No    '))
 
@@ -200,10 +217,10 @@ if seC == 1:
     print('  -5x(4x +1)  ==>   -20x^2 -5x ')
     print(' ')
     print(' ')
-    print(' 7(x -2) + 3(x +4) - 6(x -2)    ⇒   (7x -14) + (3x +12) - (6x -12)    ⇒  4x +14 '  )
+    print(' 7(x -2) + 3(x +4) - 6(x -2)    ==>   (7x -14) + (3x +12) - (6x -12)    ==>  4x +14 '  )
     print(' ')
     print(' ')
-    print(' 4x(x +3) - 2x(3x -7)   ⇒  (4x^2 + 12x ) - (6x^2 -14x)    ⇒  -2X^2 + 26x ')
+    print(' 4x(x +3) - 2x(3x -7)   ==>  (4x^2 + 12x ) - (6x^2 -14x)    ==>  -2X^2 + 26x ')
     print(' ')
     print(' ')
     print('Questions')
@@ -212,6 +229,7 @@ if seC == 1:
     c1=str(raw_input('Q1 -----  Expand & Simplify  (4x + 5)x  ------    '))
     if c1 == '4x^2 + 5x':
         print('Correct')
+        print(' ')
     else:
         print('Incorrect')
         print(' ')
@@ -219,6 +237,7 @@ if seC == 1:
     c2=str(raw_input('Q2 ----- Expand & Simplify   5x -6 -(3x -2) ------     '))
     if c2 == '2x -8':
         print('Correct')
+        print(' ')
     else:
         print('Incorrect')
         print(' ')
@@ -226,6 +245,7 @@ if seC == 1:
     c3=str(raw_input('Q3 ----- Expand & Simplify   x(3x^2 -2x +5) ------     '))
     if c3 == '3x^3 -2x^2 +5x':
         print('Correct')
+        print(' ')
     else:
         print('Incorrect')
         print(' ')
@@ -233,6 +253,7 @@ if seC == 1:
     c4=str(raw_input('Q4 ----- Expand & Simplify   -2y^2(5 -7y +3y^2) ------     '))
     if c4 == '-10y^2 +14y^3 -6y^4':
         print('Correct')
+        print(' ')
     else:
         print('Incorrect')
         print(' ')
@@ -240,6 +261,7 @@ if seC == 1:
     c5=str(raw_input('Q5 ----- Expand & Simplify  3x^2(2x +1) -5x^2(3x -4) ------     '))
     if c5 == '-9x^3 +23x^2':
         print('Correct')
+        print(' ')
     else:
         print('Incorrect')
         print(' ')
@@ -249,7 +271,7 @@ cont=int(input('Enter 1 to continue  '))
            
 ##########################################   Exercise 1D Choice   ##########################################
 
-if seC == 0 or cont == 1:
+if seC == 0 or cont == 1 or 0:
     print(' ')
     seD=int(input('C1 Factorising Expressions - 1D ?  1 for Yes  ---  0 for No    '))
 
@@ -270,10 +292,10 @@ if seD == 1:
     print('  4x +8   ==>   -4(x +2)  ')
     print(' ')
     print(' ')
-    print(' 35x^2 -28x   ⇒   7x(5x -4)  '  )
+    print(' 35x^2 -28x   ==>   7x(5x -4)  '  )
     print(' ')
     print(' ')
-    print(' 4x^2 +12x     ⇒ 4x(x +3) '  )
+    print(' 4x^2 +12x     ==>  4x(x +3) '  )
     print(' ')
     print(' ')
     print('Questions')
@@ -282,6 +304,7 @@ if seD == 1:
     d1=str(raw_input('Q1 -----  Factorise  6ab -2ab^2  ------     '))
     if d1 == '2ab(3 -b)':
            print('Correct')
+           print(' ')
     else:
            print('Incorrect')
            print(' ')
@@ -289,6 +312,7 @@ if seD == 1:
     d2=str(raw_input('Q2 -----  Factorise   9xy^2 + 12x^2y ------     '))
     if d2 == '3xy(3y +4x)':
            print('Correct')
+           print(' ')
     else:
            print('Incorrect')
            print(' ')
@@ -296,6 +320,7 @@ if seD == 1:
     d3=str(raw_input('Q3 -----  Factorise   12x^2y + 8xy^2 ------     '))
     if d3 == '4xy(3x +2y)':
            print('Correct')
+           print(' ')
     else:
            print('Incorrect')
            print(' ')
@@ -303,6 +328,7 @@ if seD == 1:
     d4=str(raw_input('Q4 -----  Factorise   15y -20yz^2 ------     '))
     if d4 == '5y(3 -4z^2)':
            print('Correct')
+           print(' ')
     else:
            print('Incorrect')
            print(' ')
@@ -310,6 +336,7 @@ if seD == 1:
     d5=str(raw_input('Q5 -----  Factorise  xy^2 - x^2y ------     '))
     if d5 == 'xy(y -x)':
            print('Correct')
+           print(' ')
     else:
            print('Incorrect')
            print(' ')
@@ -319,7 +346,7 @@ cont=int(input('Enter 1 to continue  '))
            
 ##########################################   Exercise 1E Choice   ##########################################
 
-if seD == 0 or cont == 1:
+if seD == 0 or cont == 1 or 0:
     print(' ')
     seE=int(input('C1 Algebra Factorising Quadratics - 1E ?   1 for Yes  ---  0 for No    '))
 
@@ -339,39 +366,62 @@ if seE == 1:
     print('  6x^2 +9x   ==>   3x(2x +3)  ')
     print(' ')
     print(' ')
-    print(' x^2 -25  ⇒  (x +5)(x -5)  ⇒  Difference of two squares '  )
+    print(' x^2 -25  ==>  (x +5)(x -5)  ==>  Difference of two squares '  )
     print(' ')
     print(' ')
-    print(' x^2 -5x -6    ⇒ (x +1)(x -6) '  )
+    print(' x^2 -5x -6    ==>  (x +1)(x -6) '  )
     print(' ')
     print(' ')
     print('Questions')
     print(' ')
 
     e1=str(raw_input('Q1 -----  Factorise x^2 + 11x + 24   ------     '))
-    if e1 == '(x +8)(x +3)' or '(x +3)(x +8)' :
+    if e1 == '(x +8)(x +3)':
            print('Correct')
+           print(' ')
+           
+    elif e1 == '(x +3)(x +8)':
+           print('Correct')
+           print(' ')
+           
     else:
            print('Incorrect')
            print(' ')
     
-    e2=str(raw_input('Q2 -----  Factorise   x^2 + 3x − 40 -----   '))
-    if e2 == '(x +8)(x -5)' or '(x -5)(x +8)':
+    e2=str(raw_input('Q2 -----  Factorise   x^2 + 3x -40 -----   '))
+    if e2 == '(x +8)(x -5)':
            print('Correct')
+           print(' ')
+           
+    elif e2 == '(x -5)(x +8)':
+           print('Correct')
+           print(' ')
     else:
            print('Incorrect')
            print(' ')
     
     e3=str(raw_input('Q3 -----  Factorise  2x^2 + 5x + 2  ----  '))
-    if e3 == '(2x +1)(x +2)' or '(x +2)(2x +1)':
+    if e3 == '(2x +1)(x +2)':
            print('Correct')
+           print(' ')
+           
+    elif e3 == '(x +2)(2x +1)':
+           print('Correct')
+           print(' ')
+           
     else:
            print('Incorrect')
            print(' ')
     
     e4=str(raw_input('Q4 -----  Factorise  4x^2 − 25 --- '))
-    if e4 == "(2x +5)(2x −5)" or '(2x -5)(2x +5)':
+    if e4 == "(2x +5)(2x −5)":
            print('Correct')
+           print(' ')
+
+    elif e4 == '(2x -5)(2x +5)':
+           print('Correct')
+           print(' ')
+    
     else:
            print('Incorrect')
            print(' ')
@@ -379,6 +429,8 @@ if seE == 1:
     e5=str(raw_input('Q5 -----  Factorise  15x^2 + 42x − 9 --- '))
     if e5 == '3(5x −1)(x +3)':
            print('Correct')
+           print(' ')
+           
     else:
            print('Incorrect')
            print(' ')
@@ -388,7 +440,7 @@ cont=int(input('Enter 1 to continue  '))
 
 ##########################################   Exercise 1F Choice   ##########################################
 
-if seE == 0 or cont == 1:
+if seE == 0 or cont == 1 or 0:
     print(' ')
     seF=int(input('C1 Algebra Simplifying & Evaluating Indices - 1F ?   1 for Yes  ---  0 for No    '))
 
@@ -407,49 +459,54 @@ if seF == 1:
     print('Evaluate:  9^1/2  ,   25^-3/2    AND  (x^2)^3/2  ' )
     print(' ')
     print(' ')
-    print('  9^1/2   ⇒   √9   ⇒    ± 3     ( 9^1 , Square root answer as it is a 2 ) ')
+    print('  9^1/2   ==>   sqrt 9   ==>    3     ( 9^1 , Square root answer as it is a 2 ) ')
     print(' ')
-    print('                 ___1___      ___1___       ___1___        ± _1_ ')
-    print(' 25^-3/2   ⇒     25^3/2  ⇒   (√25)^3   ⇒   (± 5)    ⇒      25  '  )
+    print('                 ___1___           ___1___           __1__           _1_ ')
+    print(' 25^-3/2   ==>    25^3/2   ==>    (sqrt 25)^3   ==>  (5)^2    ==>     25  '  )
     print(' ')
     print(' ')
-    print(' Simplify :  (x^2)^3/2    ⇒  √x^2 = x,   Ans^3 = x^3 '  )
+    print(' Simplify :  (x^2)^3/2    ==>  sqrt x^2 = x,   Ans^3 = x^3 '  )
     print(' ')
     print(' ')
     print('Questions')
     print(' ')
 
-    e1=str(raw_input('Q1 -----  Evaluate  81^1/2  ------     '))
-    if e1 == '9':
+    f1=str(raw_input('Q1 -----  Evaluate  81^1/2  ------     '))
+    if f1 == '9':
            print('Correct')
+           print(' ')
     else:
            print('Incorrect')
            print(' ')
     
-    e2=str(raw_input('Q2 -----  Evaluate  4^-2 ---- '))
-    if e2 == '1/16':
+    f2=str(raw_input('Q2 -----  Evaluate  4^-2 ---- '))
+    if f2 == '1/16':
            print('Correct')
+           print(' ')
     else:
            print('Incorrect')
            print(' ')
     
-    e3=str(raw_input('Q3 -----  Evaluate  (3/4)^0------     '))
-    if e3 == '1':
+    f3=str(raw_input('Q3 -----  Evaluate  (3/4)^0------     '))
+    if f3 == '1':
            print('Correct')
+           print(' ')
     else:
            print('Incorrect')
            print(' ')
     
-    e4=str(raw_input('Q4 ----- Evaluate  (27/8)^2/3 ----  '))
-    if e4 == '9/4':
+    f4=str(raw_input('Q4 ----- Evaluate  (27/8)^2/3 ----  '))
+    if f4 == '9/4':
            print('Correct')
+           print(' ')
     else:
            print('Incorrect')
            print(' ')
   
-    e5=str(raw_input('Q5 -----  3x^4  X  2x^-5 ----  '))
-    if e5 == '6x^-1':
+    f5=str(raw_input('Q5 -----  3x^4  X  2x^-5 ----  '))
+    if f5 == '6x^-1':
            print('Correct')
+           print(' ')
     else:
            print('Incorrect')
            print(' ')
@@ -459,7 +516,7 @@ cont=int(input('Enter 1 to continue  '))
 
 ##########################################   Exercise 1G Choice   ##########################################
 
-if seF == 0 or cont == 1:
+if seF == 0 or cont == 1 or 0:
     print(' ')
     seG=int(input('C1 Surds - 1G ?   1 for Yes  ---  0 for No    '))
 
